@@ -60,7 +60,6 @@ class AuthorBiographyGenerator(Generator):
                 continue
 
             if is_valid_content(author, author_file):
-                # import ipdb; ipdb.set_trace()
                 self.authors_info.add(author)
 
         self._update_context(('authors_info',))
